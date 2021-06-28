@@ -22,7 +22,7 @@ let seattle = {
 
   },
   calcPerHr :function(){
-    return Math.floor(this.calcRandHrlyCust()*this.avgCookies);
+    return Math.floor(this.cph()*this.avgCookies);
 
   },
 
@@ -59,7 +59,7 @@ let seattle = {
     for (let i = 0; i < this.hour.length; i++) {
 
       let liE1 = document.createElement('li');
-      liE1.textContent = this.hour[i]+this.cph(23,65);
+      liE1.textContent = this.hour[i]+this.cph();
 
       ulE1.appendChild(liE1);
 
@@ -143,7 +143,7 @@ let tokyo = {
     for (let i = 0; i < this.hour.length; i++) {
 
       let liE1 = document.createElement('li');
-      liE1.textContent = this.hour[i]+this.cph(23,65);
+      liE1.textContent = this.hour[i]+this.cph();
 
       ulE1.appendChild(liE1);
 
@@ -225,7 +225,7 @@ let dubai = {
     for (let i = 0; i < this.hour.length; i++) {
 
       let liE1 = document.createElement('li');
-      liE1.textContent = this.hour[i]+this.cph(23,65);
+      liE1.textContent = this.hour[i]+this.cph();
 
       ulE1.appendChild(liE1);
 
@@ -307,7 +307,7 @@ let paris = {
     for (let i = 0; i < this.hour.length; i++) {
 
       let liE1 = document.createElement('li');
-      liE1.textContent = this.hour[i]+this.cph(23,65);
+      liE1.textContent = this.hour[i]+this.cph();
 
       ulE1.appendChild(liE1);
 
@@ -390,8 +390,7 @@ let lima = {
     for (let i = 0; i < this.hour.length; i++) {
 
       let liE1 = document.createElement('li');
-      liE1.textContent = this.hour[i]+this.cph(23,65);
-
+      liE1.textContent = this.hour[i]+this.cph();
       ulE1.appendChild(liE1);
 
 
