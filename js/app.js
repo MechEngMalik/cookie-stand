@@ -2,7 +2,7 @@
 // let table = document.getElementById('table');
 // console.log(hour)
 let hour = ['6 am: ','7 am: ','8 am: ','9 am: ','10 am: ','11 am: ','12 pm: ','1 pm: ','2 pm: ','3 pm: ','4 pm: ','5 pm: ','6pm:  ','7 pm: '];
-
+let all =[];
 function Sales(name,minCust,maxCust,avgCookies){
   this.name= name;
   this.minCust = minCust ;
@@ -14,7 +14,7 @@ function Sales(name,minCust,maxCust,avgCookies){
 
   all.push(this);
 }
-let all =[];
+
 Sales.prototype.cph = function () {
 
   return Math.floor(Math.random()*(this.maxCust-this.minCust + 1) + this.minCust);
@@ -24,9 +24,9 @@ Sales.prototype.calcPerHr = function(){
 };
 Sales.prototype.hourlyTotal = function (){
   for (let i = 0; i <5; i++) {
-    
-    
-    
+
+
+
   }
 };
 
