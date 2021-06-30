@@ -1,6 +1,5 @@
 'use strict';
-// let table = document.getElementById('table');
-// console.log(hour)
+
 let hour = ['6 am: ','7 am: ','8 am: ','9 am: ','10 am: ','11 am: ','12 pm: ','1 pm: ','2 pm: ','3 pm: ','4 pm: ','5 pm: ','6pm:  ','7 pm: '];
 let all =[];
 function Sales(name,minCust,maxCust,avgCookies){
@@ -133,13 +132,13 @@ let tokyo = new Sales ('tokyo',3,24,1.2);
 let paris = new Sales('paris',11,38,3.7);
 let dubai = new Sales('dubai',20,38,2.3);
 let lama = new Sales('lama',2,16,4.6);
-let total = new Sales('total' ,2,16,4.6)
+
 seattle.render();
 tokyo.render();
 paris.render();
 dubai.render();
 lama.render();
-total.render1();
+
 // let sut = document.createElement('tr');
 //     let th3 = document.createElement('th');
 //     th3.textContent = 'Total';
@@ -148,9 +147,22 @@ total.render1();
 
 
 
+let storForm = document.getElementById('Sform');
+storForm.addEventListener('submit',addstore);
+function addstore(event) {
+  event.preventDefault();
 
+  let storeName = event.target.storeName.value;
+  let minC = event.target.mincust.value;
+  let maxC = event.target.maxcust.value;
+  let avgN = event.target.avgCookies.value;
 
-
+  let newStore = new Sales (storeName, minC, maxC, avgN);
+  newStore.render();
+  console.log('non');
+}
+let total = new Sales('total' ,2,16,4.6);
+total.render1();
 
 
 
