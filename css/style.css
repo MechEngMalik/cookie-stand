@@ -78,6 +78,7 @@ h4{
     font-family: cursive;
     padding-left: 15%;
     margin-top: 5%;
+    margin-bottom: 5%;
     
 }
 
@@ -131,18 +132,20 @@ h4{
 #left{
     float: left;
     width: 75%;
-    font-size: 20PX;
+    font-size: 23PX;
 }
 
 
 #rigth{
     float: right;
-    width: 25%;
+    width: 23%;
     margin-top: 3%;
 }
 #right h2{
     color:#FFE194 ;
+    font-size: px;
 }
+
 footer{
     padding: 5%;
     clear: both;
